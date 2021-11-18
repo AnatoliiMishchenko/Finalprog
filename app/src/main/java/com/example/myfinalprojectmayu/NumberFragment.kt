@@ -44,7 +44,7 @@ class NumberFragment : Fragment() {
     }
 
     private fun randomize() {
-        randomValue = Random.nextInt(9)
+        randomValue = Random.nextInt(100)
         resultTextView.text = randomValue.toString()
     }
 }
