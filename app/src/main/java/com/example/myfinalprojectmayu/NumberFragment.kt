@@ -6,7 +6,9 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.TextView
+import android.widget.Toast
 import androidx.fragment.app.Fragment
+import com.google.android.material.snackbar.Snackbar
 import kotlin.random.Random
 
 private const val LAST_RANDOM_VALUE = "LAST_RANDOM_VALUE"
@@ -46,5 +48,8 @@ class NumberFragment : Fragment() {
     private fun randomize() {
         randomValue = Random.nextInt(100)
         resultTextView.text = randomValue.toString()
+
+
     }
+
 }
